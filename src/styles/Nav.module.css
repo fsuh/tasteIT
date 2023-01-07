@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul li{
+    display: inline-block;
+  }
+  
+  .nav ul li a{
+   color: grey;
+   padding: 1rem;
+   text-decoration: none;
+   text-transform: uppercase;
+   transition: all 0.4s;
+    
+  }
+  
+  .nav ul li a.active {
+    color: white;
+    
+  }
+
+  .nav ul li a:hover{
+    color: white;
+  }

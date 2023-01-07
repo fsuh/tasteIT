@@ -1,0 +1,19 @@
+.header{
+    background: lightgrey;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header h3 {
+    margin-top: 20px;
+    color: grey;
+    font-size: 30px;
+    text-decoration-line: none;
+    text-decoration: none;
+    
+}
+
+
+

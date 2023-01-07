@@ -1,0 +1,37 @@
+.recipes form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.recipes input[type=text]{
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 50px;
+    padding: 12px 20px;
+    transition:width 0.4s ease-in-out;
+    margin: 8px 0;
+}
+
+.recipes input[type=text]:focus {
+    width: 50%;
+}
+
+.recipes label {
+    margin:8px 0;
+    font-size: 30px;
+    font-weight: bold;
+
+
+}
+
+.results {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
