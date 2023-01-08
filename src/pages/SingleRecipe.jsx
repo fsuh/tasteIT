@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 const SingleRecipe = () => {
-    const {params} = useParams();
+    const params = useParams();
     const navigate = useNavigate();
     const [data, setData] = useState([]);
     const[isLoading, setIsLoading] = useState(false)
@@ -12,7 +12,7 @@ const SingleRecipe = () => {
 
     useEffect(()=>{
         setIsLoading(true)
-        axios.get(`http://localhost:3001/recipe/${params.singlerecipe}`)
+        axios.get(`http://localhost:3001/recipe/${params.recipedetails}`)
         .then((res)=>{
             setData(res.data);
             setIsLoading(false)

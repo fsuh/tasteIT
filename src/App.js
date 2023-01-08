@@ -15,7 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="recipies" element={<Recipies />} />
-        <Route path="recipies/:singlerecipe" element={<SingleRecipe />} />
+        <Route path="recipies/:recipedetails" element={<SingleRecipe />} />
         <Route path="add-new" element={<Addnew />} />
         <Route path="*" element={<NoPage />} />
 

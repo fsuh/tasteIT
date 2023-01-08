@@ -3,10 +3,11 @@ import axios from 'axios'
 import { Link } from 'react-router-dom';
 import styles from '../styles/Card.module.css'
 
-const Card = ({image, name, country}) => {
+const Card = ({id, image, name, country}) => {
 
   const [flagArr, setFlagArr] = useState('');
   const [isLoading, setIsLoading] =useState(false)
+  
 
   useEffect(()=>{
     setIsLoading(false)
@@ -30,7 +31,7 @@ const Card = ({image, name, country}) => {
         </div>
         
         <h3>{name}</h3>
-        <Link to={`${name}`}>see more...</Link>
+        <Link to={`${id}`}>see more...</Link>
 
     </div>
   )

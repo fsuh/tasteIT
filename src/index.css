@@ -3,6 +3,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   max-width: 1200px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

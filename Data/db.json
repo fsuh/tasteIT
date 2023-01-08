@@ -3,9 +3,9 @@
     {
       "id": 1,
       "name": "Achu",
-      "author": "Fuh Suh",
+      "author": "Bafut",
       "origin": "Cameroon",
-      "description": "A local traditional recipe from the village of Bafut-Cameroon",
+      "description": "A local traditional recipe from the Bafut chiefDom of Cameroon",
       "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.africanbites.com%2Fwp-content%2Fuploads%2F2014%2F02%2FIMG_3538-1-150x150.jpg&f=1&nofb=1&ipt=545b15eb7ddf5ae9577c9a6f8b74c3a873a08c49cc448ef3c8b84c07a0631102&ipo=images",
       "ingredients": [
         {
@@ -18,51 +18,17 @@
     {
       "id": 2,
       "name": "Eru",
-      "author": "Scarlett",
+      "author": "Ibo",
       "origin": "Nigeria",
-      "description": "A local traditional recipe from the village of Bafut-Cameroon",
+      "description": "A local traditional recipe from the Ibo ChiefDom of Nigeria",
       "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F0%2F04%2FPoulet_frit%252C_l%25C3%25A9gumes_et_foufou_banane_(Plat_Centrafricain).jpg%2F180px-Poulet_frit%252C_l%25C3%25A9gumes_et_foufou_banane_(Plat_Centrafricain).jpg&f=1&nofb=1&ipt=1bd28d8048a2ed4cbf9ffaaadf0b300d3c478b1fcbd8decf01e5cccb28354044&ipo=images",
       "ingredients": [
         {
-          "item": "cocoyams",
+          "item": "Casava",
           "quantity": "2grams"
         }
       ],
       "instructions": "pound the cocoyams and arrange it in roles"
-    },
-    {
-      "id": 3,
-      "name": "Koki",
-      "author": "Zion",
-      "origin": "Benin",
-      "description": "A local traditional recipe from the village of Bafut-Cameroon",
-      "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.preciouscore.com%2Fwp-content%2Fuploads%2F2015%2F09%2FCameroonEruRecipe-150x150.jpg&f=1&nofb=1&ipt=74bde373d87ef89ffd57f1153b5039a2e7b2fba2c5bed258dd0558078721ee7c&ipo=images",
-      "ingredients": [
-        {
-          "item": "cocoyams",
-          "quantity": "2grams"
-        }
-      ],
-      "instructions": "pound the cocoyams and arrange it in roles"
-    },
-    {
-      "name": "Meat",
-      "author": "Fuh Suh",
-      "origin": "Algeria",
-      "description": "whatever",
-      "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.likealocalguide.com%2Fblog%2Fwp-content%2Fuploads%2F2014%2F11%2FDSC_6120-300x201.jpg&f=1&nofb=1&ipt=e37bf131c1cbe8ff79bc87c64d0d087b9faa85b21c0827b0e1f612cfc363e9ce&ipo=images",
-      "ingredients": [
-        {
-          "item": "rice",
-          "quantity": "2kilo"
-        },
-        {
-          "item": "coco",
-          "quantity": "2grams"
-        }
-      ],
-      "instructions": "cook now",
-      "id": 4
     },
     {
       "name": "Rice",

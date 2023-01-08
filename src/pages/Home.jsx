@@ -32,7 +32,7 @@ const Home = () => {
         <div>
           <h4>Want to know more about our projects</h4>
           <p>Visit our programme homepage</p>
-          <Link to={{ pathname:'https://en.bc.fi/'}} target='_blank'>Business College Helsinki homepage</Link>
+          <a href="https://bc.fi" target="_blank" rel="noreferrer">Business College Helsinki homepage</a>
         </div>
         </div>
       </section>
