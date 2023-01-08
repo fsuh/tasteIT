@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Recipies from './pages/Recipies';
 import Addnew from './pages/Addnew';
 import NoPage from './pages/NoPage';
+import SingleRecipe from './pages/SingleRecipe';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="recipies" element={<Recipies />} />
+        <Route path="recipies/:singlerecipe" element={<SingleRecipe />} />
         <Route path="add-new" element={<Addnew />} />
         <Route path="*" element={<NoPage />} />
 

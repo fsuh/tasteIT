@@ -8,7 +8,7 @@
 .recipes input[type=text]{
     width: 200px;
     box-sizing: border-box;
-    border: 2px solid red;
+    border: 2px solid lightslategrey;
     border-radius: 4px;
     font-size: 16px;
     height: 50px;

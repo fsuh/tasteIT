@@ -9,6 +9,7 @@ const Recipies = () => {
   const [data, setData] =useState([])
   const [searchInput, setSearchInput] = useState('');
   const [isLoading, setIsLoading]=useState(false);
+  // const [flagArr, setFlagArr] = useState()
 
 
   useEffect(()=>{
@@ -19,6 +20,9 @@ const Recipies = () => {
       setData(res.data);
       setIsLoading(false)
     })
+    .catch((err)=>console.log(err.message));
+
+    
   },[])
 
   if(isLoading){
@@ -57,12 +61,11 @@ const Recipies = () => {
         image={item.image}
         name={item.name}
         country={item.origin}
+
       />
 
 
     ))}
-
-    
 
     </div>
     </div>
