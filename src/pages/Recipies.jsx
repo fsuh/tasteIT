@@ -61,6 +61,7 @@ const Recipies = () => {
         image={item.image}
         name={item.name}
         country={item.origin}
+        id ={item.id}
 
       />
 

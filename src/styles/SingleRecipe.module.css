@@ -1,0 +1,65 @@
+.single{
+    display: grid;
+    grid-template-areas:
+    "title title"
+    "images authorship"
+    "ingredients instructions";
+    grid-template-rows: 60px 35vh 30vh;
+    grid-template-columns: 40vw 60vw;
+    grid-row-gap:3px;
+    height: 80vh;
+    margin: 0 20px;
+}
+.single h2{
+    grid-area: title;
+    text-align: center;
+}
+
+.images{
+    grid-area: images;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.foodImg{
+    height: 200px;
+    width: 200px;
+    padding: 2px;
+    border-radius: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.flagImg{
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.authorship{
+    grid-area: authorship;
+    margin: 0;
+}
+.authorship h4{
+    margin: 0;
+    padding-bottom: 5px;
+}
+.authorship p{
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.ingredients{
+    grid-area:ingredients
+}
+
+.instructions{
+    grid-area: instructions;
+}
+
