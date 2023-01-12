@@ -6,7 +6,7 @@ import classes from '../styles/Header.module.css'
 const Header = () => {
   return (
     <header className={classes.header}>
-    <Link to="/">
+    <Link to="/" a>
         <h3>tasteIT</h3>
     </Link>
     <Nav />
