@@ -1,7 +1,7 @@
 .home{
     display:grid;
     grid-template-areas: "homeHeader" "homeMain";
-    grid-template-rows: 45vh 35vh;
+    grid-template-rows: 50vh 45vh;
 }
 
 .homeHeader{
@@ -14,7 +14,7 @@
     object-fit: cover;
     position: absolute;
     width: 100vw;
-    height: 45vh;
+    height: 50vh;
     z-index:1;
 }
 
