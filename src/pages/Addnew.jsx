@@ -78,15 +78,20 @@ const addFields =(e) =>{
 
   }
 
-  const postHandler = () => {
-    axios.post('http://localhost:3001/recipe', recipe);
+  const postHandler =async () => {
+    try {
+      
+     await axios.post('http://localhost:3001/recipe', recipe);
+    } catch (error) {
+      
+    }
     
   }
 
   
   return (
     <div className={styles.addnew}>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={submitHandler} >
     <h1>Add new recipe</h1>
         <label 
         htmlFor='name'>Name:
@@ -167,7 +172,7 @@ const addFields =(e) =>{
         <input 
         type='submit' 
         value='Post recipe'
-        onClick={submitHandler}
+        // onClick={submitHandler}
         />
     </form>
     </div>

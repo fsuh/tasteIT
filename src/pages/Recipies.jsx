@@ -42,8 +42,8 @@ const Recipies = () => {
   const search = (data) =>{
     return data.filter(
       (item) =>
-      item.name.toLowerCase().includes(searchInput)||
-      item.origin.toLowerCase().includes(searchInput))
+      item.name.toLowerCase().includes(searchInput.toLowerCase())||
+      item.origin.toLowerCase().includes(searchInput.toLowerCase()))
   }
 
   return (
