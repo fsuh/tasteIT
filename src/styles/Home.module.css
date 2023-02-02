@@ -1,79 +1,75 @@
-.home{
-    display:grid;
-    grid-template-areas: "homeHeader" "homeMain";
-    grid-template-rows: 50vh 45vh;
+.home {
+  display: grid;
+  grid-template-areas: "homeHeader" "homeMain";
+  grid-template-rows: 50vh 45vh;
 }
 
-.homeHeader{
-    grid-area: homeHeader;
-    position:relative;
-
+.homeHeader {
+  grid-area: homeHeader;
+  position: relative;
 }
 
-.home video{
-    object-fit: cover;
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-    z-index:1;
+.home video {
+  object-fit: cover;
+  position: absolute;
+  width: 100vw;
+  height: 50vh;
+  z-index: 1;
 }
 
-.homeHeader div{
-    position: absolute;
-    top: 0;
-    left:0;
-    bottom:0;
-    right:0;
-    z-index:2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-flow: column;
-    padding-left: 50px;
-    color: white;
+.homeHeader div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column;
+  padding-left: 50px;
+  color: white;
 }
 
-.homeHeader a{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: salmon;
-    border: 1px solid salmon;
-    margin-top: 30px;
-    padding: 5px;
+.homeHeader a {
+  text-decoration: none;
+  color: salmon;
+  border: 1px solid salmon;
+  margin-top: 30px;
+  padding: 5px;
 }
 
-.homeMain{
-    grid-area: homeMain;
-    display: grid;
-    grid-template-rows: 8vh 27vh;
-    grid-template-columns: 1fr;
+.homeMain {
+  grid-area: homeMain;
+  display: grid;
+  grid-template-rows: 8vh 27vh;
+  grid-template-columns: 1fr;
 }
 
-.homeMain h3{
-    grid-row: 1/span 1;
-    text-align: center;
-    
+.homeMain h3 {
+  grid-row: 1 / span 1;
+  text-align: center;
 }
 
-.mainContent{
-    grid-row: 2 / span 1;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-flow: row;
+.mainContent {
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row;
 }
 
-.mainContent div{
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 1px lightslategray;
-    width: 300px;
-    height: 150px;
-    padding: 8px;
+.mainContent div {
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px lightslategray;
+  width: 300px;
+  height: 150px;
+  padding: 8px;
 }
 
-.mainContent a{
-    text-decoration: none;
-    text-decoration-line: none;
-    color: salmon;
+.mainContent a {
+  text-decoration: none;
+  color: salmon;
 }

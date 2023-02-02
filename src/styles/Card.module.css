@@ -1,52 +1,48 @@
-.card{
-    background: #eee;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
-    overflow: hidden;
-    width: 200px;
-    text-transform: uppercase;
-    position: relative;
-    top: 0;
-    left: 0;
-   
+.card {
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.9);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  overflow: hidden;
+  width: 200px;
+  text-transform: uppercase;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.card img{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    padding: 2px;
-    position: relative;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
+.card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  padding: 2px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
 }
 
-.card a{
-    text-decoration: none;
-    text-decoration-line: none;
-    text-transform: capitalize;
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 5px;
-    color: salmon;
+.card a {
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  color: salmon;
 }
 
-.flag img{
-    width: 40px;
-    height: auto;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    
+.flag img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
 }
 
-.flag{
-    
-    position: absolute;
-    top: 0;
-    right: 0;
+.flag {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
