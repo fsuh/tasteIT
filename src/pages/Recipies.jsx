@@ -29,11 +29,7 @@ const Recipies = () => {
   }
 
   const handleChange = (e) => {
-    setSearchInput(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
+    setSearchInput(e.target.value.toLowerCase().trim());
   };
 
   const search = (data) => {
@@ -46,11 +42,7 @@ const Recipies = () => {
 
   return (
     <div className={styles.recipes}>
-      <SearchBar
-        submit={handleSubmit}
-        onChange={handleChange}
-        value={searchInput}
-      />
+      <SearchBar onChange={handleChange} value={searchInput} />
 
       <div className={styles.results}>
         {search(data).map((item) => (

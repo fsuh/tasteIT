@@ -1,20 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const SearchBar = ({onChange, submit, value}) => {
+const SearchBar = ({ onChange, value }) => {
   return (
-    <form action="/recipies" method='get'  onSubmit={submit}>
-        <label htmlFor='search'>Search for recipe:</label>
-        <input 
-        type="text" 
-        placeholder='Search...'
-        name='search'
-        autoComplete='off'
+    <form action="/recipies" method="get">
+      <label htmlFor="search">Search for recipe:</label>
+      <input
+        type="text"
+        placeholder="Search..."
+        name="search"
+        autoComplete="off"
         value={value}
         onChange={onChange}
+      />
+    </form>
+  );
+};
 
-        />
-      </form>
-  )
-}
-
-export default SearchBar
+export default SearchBar;

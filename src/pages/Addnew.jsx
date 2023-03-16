@@ -28,6 +28,7 @@ const Addnew = () => {
 
   const [countryList, setCountryList] = useState([{ name: "" }]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
@@ -39,17 +40,20 @@ const Addnew = () => {
           const name = item.name.common;
           let temp = { name };
           countries.push(temp);
-          countries.sort((a, b) => (a.name > b.name ? 1 : -1));
+          countries.sort((x, y) => (x.name > y.name ? 1 : -1));
           return countries;
         });
         setCountryList(countries);
         setIsLoading(false);
       })
-      .catch((err) => alert("Loading of list of countries was not successful"));
+      .catch((error) => setError(true));
   }, []);
 
   if (isLoading) {
     return <p>Loading...</p>;
+  }
+  if (error) {
+    return <p>A problem occurred fetching the countries: {error.message}</p>;
   }
 
   const addFields = (e) => {
@@ -156,11 +160,7 @@ const Addnew = () => {
         </div>
         <label htmlFor="instructions">Instructions:</label>
         <textarea name="instructions" onChange={changeHandle}></textarea>
-        <input
-          type="submit"
-          value="Post recipe"
-          // onClick={submitHandler}
-        />
+        <input type="submit" value="Post recipe" />
       </form>
     </div>
   );

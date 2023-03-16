@@ -64,7 +64,26 @@
       ],
       "instructions": "1. slice the okro\n2. boil and add salt to spice",
       "id": 6
+    },
+    {
+      "name": "BogoChobi",
+      "author": "Zion",
+      "origin": "Libya",
+      "flag": "",
+      "description": "Whatever",
+      "image": "https://i.ytimg.com/vi/obDANL4LjJU/maxresdefault.jpg",
+      "ingredients": [
+        {
+          "item": "coco",
+          "quantity": "5kg"
+        },
+        {
+          "item": "fish",
+          "quantity": "2kg"
+        }
+      ],
+      "instructions": "Cook with fish",
+      "id": 7
     }
-    
   ]
 }
