@@ -94,19 +94,31 @@ const Addnew = () => {
         <h1>Add new recipe</h1>
         <label htmlFor="name">
           Name:
-          <input type="text" name="name" onChange={changeHandle} required />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            onChange={changeHandle}
+            required
+          />
         </label>
         <label htmlFor="author">
           Author:
           <input
+            id="author"
             type="text"
             name="author"
             autoComplete="off"
             onChange={changeHandle}
           />
         </label>
-        <label htmlFor="origin">Recipe is from:</label>
-        <select name="origin" defaultValue={"Select"} onChange={changeHandle}>
+        <label htmlFor="recipeOrigin">Recipe origin:</label>
+        <select
+          id="recipeOrigin"
+          name="origin"
+          defaultValue={"Select"}
+          onChange={changeHandle}
+        >
           <option value="Select" disabled={true}>
             Select a country
           </option>
@@ -120,10 +132,15 @@ const Addnew = () => {
             })}
         </select>
         <label htmlFor="description">Description:</label>
-        <textarea name="description" onChange={changeHandle}></textarea>
+        <textarea
+          id="description"
+          name="description"
+          onChange={changeHandle}
+        ></textarea>
         <label htmlFor="image">
           image:
           <input
+            id="image"
             type="text"
             name="image"
             autoComplete="off"
@@ -138,6 +155,7 @@ const Addnew = () => {
                 <label htmlFor="item">
                   Item:
                   <input
+                    id="item"
                     type="text"
                     name="item"
                     value={ingredients.item}
@@ -147,6 +165,7 @@ const Addnew = () => {
                 <label htmlFor="quantity">
                   Quantity:
                   <input
+                    id="quantity"
                     type="text"
                     name="quantity"
                     value={ingredients.quantity}
@@ -159,7 +178,11 @@ const Addnew = () => {
           <button onClick={addFields}>add more</button>
         </div>
         <label htmlFor="instructions">Instructions:</label>
-        <textarea name="instructions" onChange={changeHandle}></textarea>
+        <textarea
+          id="instructions"
+          name="instructions"
+          onChange={changeHandle}
+        ></textarea>
         <input type="submit" value="Post recipe" />
       </form>
     </div>

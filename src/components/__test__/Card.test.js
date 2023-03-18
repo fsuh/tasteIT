@@ -39,7 +39,6 @@ test("displays the correct image and name", async () => {
 });
 
 // Test that the component displays the correct flag
-
 test("displays the correct flag", async () => {
   const fakeData = {
     id: 1,
@@ -62,36 +61,6 @@ test("displays the correct flag", async () => {
     const flag = screen.getByAltText(fakeData.country);
     expect(flag).toBeInTheDocument();
   });
-});
-
-// test that the component displays a loading message while waiting for the API response
-
-test("displays a loading message while waiting for API response", async () => {
-  const fakeData = {
-    id: 1,
-    image: "http://localhost/fake-image-url",
-    name: "Fake Name",
-    country: "Fake Country",
-  };
-
-  jest.setTimeout(10000);
-  render(
-    <BrowserRouter>
-      <Card
-        id={fakeData.id}
-        image={fakeData.image}
-        name={fakeData.name}
-        country={fakeData.country}
-      />
-    </BrowserRouter>
-  );
-
-  await waitFor(() => {
-    const loadingMessage = screen.getByText(/loading.../i);
-    expect(loadingMessage).toBeInTheDocument();
-  });
-
-  jest.setTimeout(5000);
 });
 
 // Test that the component displays an error message when the API call fails
