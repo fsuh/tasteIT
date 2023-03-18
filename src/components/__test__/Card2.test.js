@@ -30,8 +30,8 @@ test("displays a loading message while waiting for API response", async () => {
       console.log("loadingMessage", loadingMessage);
       expect(loadingMessage).toBeInTheDocument();
     },
-    { timeout: 50000 }
+    { timeout: 10000 }
   );
 
-  jest.setTimeout(50000);
+  jest.setTimeout(5000);
 });
